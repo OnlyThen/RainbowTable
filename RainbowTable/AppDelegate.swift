@@ -13,9 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    /*
+    这个方法只有在App第一次运行的时候被执行过一次，每次App从后台激活时都不会再执行该方法。
+   （注：所有一般我们都在这里获取用户许可，比如本地消息推送的许可等）
+    */
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if SQLiteManager.shareInstance().openDB() {
+            print("open successful")
+        }
         return true
     }
 

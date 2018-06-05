@@ -12,6 +12,12 @@
 		D901181F209C3AF500813354 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D901181D209C3AF500813354 /* Main.storyboard */; };
 		D9011821209C3AF500813354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9011820209C3AF500813354 /* Assets.xcassets */; };
 		D9011824209C3AF500813354 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9011822209C3AF500813354 /* LaunchScreen.storyboard */; };
+		D98689F8209F3803002B7545 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D98689F7209F3803002B7545 /* libsqlite3.tbd */; };
+		D98689FB209F3D3A002B7545 /* RainbowSQLManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98689FA209F3D3A002B7545 /* RainbowSQLManage.swift */; };
+		D9B47937209DDB6500DC9892 /* Rainbow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B47936209DDB6500DC9892 /* Rainbow.swift */; };
+		D9B4793A209DE43700DC9892 /* MD5String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B47939209DE43700DC9892 /* MD5String.swift */; };
+		D9B8661120A6E82C00B66B7A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D9B8661020A6E82B00B66B7A /* icon.png */; };
+		D9F8C8A1209FFF160048142E /* ChainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F8C8A0209FFF160048142E /* ChainObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,13 @@
 		D9011820209C3AF500813354 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9011823209C3AF500813354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9011825209C3AF500813354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D98689F7209F3803002B7545 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		D98689FA209F3D3A002B7545 /* RainbowSQLManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbowSQLManage.swift; sourceTree = "<group>"; };
+		D9B47936209DDB6500DC9892 /* Rainbow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rainbow.swift; sourceTree = "<group>"; };
+		D9B47938209DE34400DC9892 /* MD5-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MD5-Bridge.h"; sourceTree = "<group>"; };
+		D9B47939209DE43700DC9892 /* MD5String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5String.swift; sourceTree = "<group>"; };
+		D9B8661020A6E82B00B66B7A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		D9F8C8A0209FFF160048142E /* ChainObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98689F8209F3803002B7545 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +54,7 @@
 			children = (
 				D9011818209C3AF500813354 /* RainbowTable */,
 				D9011817209C3AF500813354 /* Products */,
+				D98689F6209F3802002B7545 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +69,36 @@
 		D9011818209C3AF500813354 /* RainbowTable */ = {
 			isa = PBXGroup;
 			children = (
+				D9C0BE0D20A4383400ADB16E /* icons */,
 				D9011819209C3AF500813354 /* AppDelegate.swift */,
 				D901181B209C3AF500813354 /* ViewController.swift */,
 				D901181D209C3AF500813354 /* Main.storyboard */,
 				D9011820209C3AF500813354 /* Assets.xcassets */,
 				D9011822209C3AF500813354 /* LaunchScreen.storyboard */,
 				D9011825209C3AF500813354 /* Info.plist */,
+				D9B47936209DDB6500DC9892 /* Rainbow.swift */,
+				D9B47938209DE34400DC9892 /* MD5-Bridge.h */,
+				D9B47939209DE43700DC9892 /* MD5String.swift */,
+				D98689FA209F3D3A002B7545 /* RainbowSQLManage.swift */,
+				D9F8C8A0209FFF160048142E /* ChainObject.swift */,
 			);
 			path = RainbowTable;
+			sourceTree = "<group>";
+		};
+		D98689F6209F3802002B7545 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D98689F7209F3803002B7545 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9C0BE0D20A4383400ADB16E /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				D9B8661020A6E82B00B66B7A /* icon.png */,
+			);
+			path = icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B8661120A6E82C00B66B7A /* icon.png in Resources */,
 				D9011824209C3AF500813354 /* LaunchScreen.storyboard in Resources */,
 				D9011821209C3AF500813354 /* Assets.xcassets in Resources */,
 				D901181F209C3AF500813354 /* Main.storyboard in Resources */,
@@ -136,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B47937209DDB6500DC9892 /* Rainbow.swift in Sources */,
 				D901181C209C3AF500813354 /* ViewController.swift in Sources */,
 				D901181A209C3AF500813354 /* AppDelegate.swift in Sources */,
+				D9B4793A209DE43700DC9892 /* MD5String.swift in Sources */,
+				D9F8C8A1209FFF160048142E /* ChainObject.swift in Sources */,
+				D98689FB209F3D3A002B7545 /* RainbowSQLManage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,13 +315,13 @@
 		D9011829209C3AF500813354 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Y5C2MNDY9;
 				INFOPLIST_FILE = RainbowTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = top.onlythen.RainbowTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/RainbowTable/MD5-Bridge.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,13 +330,13 @@
 		D901182A209C3AF500813354 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Y5C2MNDY9;
 				INFOPLIST_FILE = RainbowTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = top.onlythen.RainbowTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/RainbowTable/MD5-Bridge.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
